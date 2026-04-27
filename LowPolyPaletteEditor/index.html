@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <title>LowPoly Palette Editor</title>
+    <link rel="stylesheet" href="./css/app.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <section class="panel load-panel drop-target" id="loadPanel">
+          <div class="section-head">
+            <div>
+              <p class="section-kicker" data-i18n="section.input"></p>
+              <h2 data-i18n="section.load">加载模型</h2>
+            </div>
+          </div>
+          <button type="button" class="button button-primary" id="loadButton" data-i18n="action.load">Load Model</button>
+          <p class="helper-chip" data-i18n="load.supported">支持：GLB / GLTF / FBX / OBJ / STL / PLY</p>
+          <input
+            id="modelFileInput"
+            type="file"
+            class="hidden-input"
+            multiple
+            accept=".glb,.gltf,.fbx,.obj,.mtl,.stl,.ply,.bin,.png,.jpg,.jpeg,.webp,.bmp,.tga"
+          />
+        </section>
+
+        <section class="panel palette-panel">
+          <div class="section-head">
+            <div>
+              <p class="section-kicker" data-i18n="section.palette"></p>
+              <h2 data-i18n="section.palettePreview">Palette 预览</h2>
+            </div>
+            <span class="badge" id="colorCountBadge">0</span>
+          </div>
+          <div class="palette-grid-frame">
+            <div id="paletteGrid" class="palette-grid"></div>
+          </div>
+          <p class="helper-text" id="paletteMeta"></p>
+          <button type="button" class="button button-secondary" id="resetAllButton" data-i18n="action.resetAll">Reset All</button>
+        </section>
+
+        <section class="panel actions-panel">
+          <div class="section-head">
+            <div>
+              <p class="section-kicker" data-i18n="section.output"></p>
+              <h2 data-i18n="section.actions">操作</h2>
+            </div>
+          </div>
+          <div class="field-label" data-i18n="label.exportFormat">导出格式</div>
+          <div class="toggle-group" id="exportFormatGroup" role="radiogroup" aria-label="Export format"></div>
+          <div class="field-label" data-i18n="label.textureSize">纹理尺寸</div>
+          <select class="select-field" id="textureSizeSelect" aria-label="Texture size"></select>
+          <p class="helper-text" data-i18n="label.exportZipIncludes">
+            导出的 zip 会包含所选模型格式、palette PNG 和 palette JSON。
+          </p>
+          <button type="button" class="button button-accent" id="exportButton" data-i18n="action.export">Export</button>
+        </section>
+      </aside>
+
+      <main class="viewport-shell" id="viewportShell">
+        <div class="viewport-gradient"></div>
+        <div class="top-left-controls">
+          <div class="lang-switch" aria-label="Language switch">
+            <button type="button" class="lang-button" data-lang="zh">中文</button>
+            <button type="button" class="lang-button" data-lang="en">EN</button>
+          </div>
+          <div class="zoom-controls" aria-label="UI Zoom">
+            <button type="button" class="zoom-button" data-zoom="-1">-</button>
+            <span class="zoom-value" id="zoomValueDisplay">100%</span>
+            <button type="button" class="zoom-button" data-zoom="1">+</button>
+          </div>
+        </div>
+        <div class="viewer-toolbar">
+          <button type="button" class="toolbar-button" id="fitButton" data-i18n="action.fit">Fit</button>
+          <button type="button" class="toolbar-button" id="wireframeButton" data-i18n="action.wireframe">Wireframe</button>
+          <button type="button" class="toolbar-button" id="backgroundButton" data-i18n="action.background">Background</button>
+          <button type="button" class="toolbar-button" id="autoRotateButton" data-i18n="action.autoRotate">Auto Rotate</button>
+        </div>
+        <div class="viewer-host" id="viewerHost"></div>
+        <div class="viewport-empty" id="viewportEmpty">
+          <h2 data-i18n="empty.title">把模型拖进来</h2>
+          <p data-i18n="empty.subtitle">右侧视口会自动居中并提供基础浏览操作。双击可重新 fit view。</p>
+        </div>
+        <div class="viewport-overlay is-hidden" id="dropOverlay" aria-hidden="true">
+          <div class="overlay-card">
+            <strong data-i18n="drop.title">释放鼠标即可加载</strong>
+            <span data-i18n="drop.subtitle">支持模型主文件与依赖文件一起拖入</span>
+          </div>
+        </div>
+        <section class="info-overlay" id="infoOverlay">
+          <div class="section-head section-head-compact">
+            <div>
+              <p class="section-kicker" data-i18n="section.model"></p>
+              <h2 data-i18n="section.info">模型信息</h2>
+            </div>
+          </div>
+          <div id="modelInfoGrid" class="info-grid"></div>
+        </section>
+        <section class="color-editor-panel is-hidden" id="colorEditorPanel" aria-live="polite"></section>
+      </main>
+    </div>
+
+    <div class="status-bar" id="statusBar"></div>
+    <div class="toast-stack" id="toastStack"></div>
+
+    <script src="./lib/jszip/jszip.min.js"></script>
+    <script>window.__LOWPOLY_VERSION__="v1.0.8";</script>
+<script type="module" src="./js/app.min.js"></script>
+</body>
+</html>
