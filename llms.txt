@@ -1,0 +1,20 @@
+# Old King Lab
+
+> Old King Lab publishes small productivity and game-development tools. This static site is the canonical source for the products listed below.
+
+## OverPad – Floating Scratchpad
+
+OverPad is a native macOS floating Markdown scratchpad. It opens from a draggable 48×48 pt orb and supports multiple notes, live Markdown styling, syntax-highlighted fenced code blocks, 19 color themes, eight interface languages, custom fonts, 60%–240% zoom, automatic local saving, cross-Space panels, menu-bar collapse, and an optional macOS login item.
+
+OverPad is currently available only for macOS. It does not include an account system, cloud sync, collaboration, advertising, analytics, tracking, or built-in AI. Notes and preferences are stored locally on the user’s Mac.
+
+- Product page: https://ai.oldking.wang/overpad/
+- Privacy Policy: https://ai.oldking.wang/overpad/privacy.html
+- Mac App Store: https://apps.apple.com/us/app/overpad/id6805057491
+
+## Other tools
+
+- CoordScribe: https://ai.oldking.wang/coordscribe/
+- CoordScribe3D: https://ai.oldking.wang/coordscribe3d/
+- Low Poly Palette Editor: https://ai.oldking.wang/LowPolyPaletteEditor/
+- CE Extraction Mask Painter: https://ai.oldking.wang/CE_ExtractionMaskPainter/

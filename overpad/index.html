@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>OverPad – Floating Markdown Scratchpad for Mac</title>
+  <meta name="description" content="OverPad is a native macOS floating Markdown scratchpad with multiple notes, syntax-highlighted code blocks, 19 themes, eight interface languages, and automatic local saving.">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="application-name" content="OverPad">
+  <meta name="apple-itunes-app" content="app-id=6805057491">
+  <meta name="theme-color" content="#080a17">
+  <link rel="canonical" href="https://ai.oldking.wang/overpad/">
+  <link rel="icon" type="image/png" href="./assets/overpad-app-icon.png">
+  <link rel="stylesheet" href="./styles.css">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Old King Lab">
+  <meta property="og:title" content="OverPad – Floating Markdown Scratchpad for Mac">
+  <meta property="og:description" content="An always-ready native macOS scratchpad for Markdown notes, code snippets, prompts, logs, and temporary text.">
+  <meta property="og:url" content="https://ai.oldking.wang/overpad/">
+  <meta property="og:image" content="https://ai.oldking.wang/overpad/assets/overpad-always-within-reach.png">
+  <meta property="og:image:width" content="1586">
+  <meta property="og:image:height" content="992">
+  <meta property="og:image:alt" content="OverPad floating above Xcode, a browser, and a terminal on macOS">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="OverPad – Floating Markdown Scratchpad for Mac">
+  <meta name="twitter:description" content="Capture Markdown notes and code without leaving your current Mac workflow.">
+  <meta name="twitter:image" content="https://ai.oldking.wang/overpad/assets/overpad-always-within-reach.png">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "OverPad – Floating Scratchpad",
+    "alternateName": "OverPad",
+    "url": "https://ai.oldking.wang/overpad/",
+    "downloadUrl": "https://apps.apple.com/us/app/overpad/id6805057491",
+    "image": "https://ai.oldking.wang/overpad/assets/overpad-app-icon.png",
+    "screenshot": [
+      "https://ai.oldking.wang/overpad/assets/overpad-always-within-reach.png",
+      "https://ai.oldking.wang/overpad/assets/overpad-zoom-controls.png",
+      "https://ai.oldking.wang/overpad/assets/overpad-one-click-notes.png",
+      "https://ai.oldking.wang/overpad/assets/overpad-themes.png"
+    ],
+    "operatingSystem": "macOS",
+    "applicationCategory": "DeveloperApplication",
+    "softwareVersion": "1.0",
+    "description": "OverPad is a native macOS floating Markdown scratchpad. A draggable orb opens an editor with multiple notes, live Markdown styling, syntax-highlighted fenced code blocks, 19 color themes, eight interface languages, font controls, zoom, and automatic local saving.",
+    "featureList": [
+      "Draggable floating orb",
+      "Cross-Space floating editor designed for native macOS full-screen workflows",
+      "Multiple Markdown notes",
+      "Live Markdown styling",
+      "Syntax-highlighted fenced code blocks",
+      "19 built-in color themes",
+      "Eight interface languages",
+      "Custom fonts and 60% to 240% zoom",
+      "Automatic local saving",
+      "No account or cloud sync required"
+    ],
+    "inLanguage": ["en", "zh-Hans", "zh-Hant", "ja", "ko", "es", "fr", "de"],
+    "author": {
+      "@type": "Organization",
+      "name": "Old King Lab",
+      "url": "https://ai.oldking.wang/"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is OverPad?",
+        "acceptedAnswer": {"@type": "Answer", "text": "OverPad is a native floating Markdown scratchpad for macOS. It stays available as a draggable orb and opens into a lightweight editor for notes, code snippets, prompts, logs, and temporary text."}
+      },
+      {
+        "@type": "Question",
+        "name": "Does OverPad send notes to the cloud?",
+        "acceptedAnswer": {"@type": "Answer", "text": "No. OverPad stores notes and preferences locally on the Mac and does not provide accounts, cloud sync, analytics, advertising, or tracking."}
+      },
+      {
+        "@type": "Question",
+        "name": "Does OverPad include AI features?",
+        "acceptedAnswer": {"@type": "Answer", "text": "No. OverPad does not generate, summarize, translate, or upload content with AI. It is useful for preparing clean Markdown context that you can manually copy into an AI tool of your choice."}
+      },
+      {
+        "@type": "Question",
+        "name": "Which platforms does OverPad support?",
+        "acceptedAnswer": {"@type": "Answer", "text": "OverPad is currently available only for macOS through the Mac App Store. There is no iPhone, iPad, Windows, Android, or web version at this time."}
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Primary navigation">
+      <a class="brand" href="./" aria-label="OverPad home">
+        <img src="./assets/overpad-app-icon.png" alt="" width="36" height="36">
+        <span>OverPad</span>
+      </a>
+      <div class="nav-links">
+        <a href="#features">Features</a>
+        <a href="#screenshots">Screenshots</a>
+        <a href="#faq">FAQ</a>
+        <a class="privacy-link" href="./privacy.html">Privacy Policy</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-grid container">
+        <div>
+          <p class="eyebrow">Native macOS floating scratchpad</p>
+          <h1><span class="gradient-text">Capture ideas</span><br>without switching away.</h1>
+          <p class="lead">OverPad keeps a lightweight Markdown editor one click away—above your coding, browsing, writing, and full-screen workflows.</p>
+          <div class="actions">
+            <a class="button primary" href="https://apps.apple.com/us/app/overpad/id6805057491" rel="noopener">Download on the Mac App Store</a>
+            <a class="button" href="#what-is-overpad">Learn how it works</a>
+          </div>
+          <p class="availability">Version 1.0 · Available for Mac only</p>
+        </div>
+        <div class="hero-visual">
+          <img src="./assets/overpad-always-within-reach.png" width="1586" height="992" alt="OverPad floating Markdown editor displayed above Xcode, Apple documentation, and a terminal" fetchpriority="high">
+        </div>
+      </div>
+    </section>
+
+    <section class="container" aria-label="Product facts">
+      <div class="facts">
+        <div class="fact"><strong>macOS</strong><span>Native Mac application</span></div>
+        <div class="fact"><strong>19 themes</strong><span>3 light and 16 dark</span></div>
+        <div class="fact"><strong>8 languages</strong><span>Localized interface</span></div>
+        <div class="fact"><strong>Local saving</strong><span>No account required</span></div>
+      </div>
+    </section>
+
+    <section class="section" id="what-is-overpad">
+      <div class="container two-column">
+        <div>
+          <p class="eyebrow">What OverPad is</p>
+          <h2>A scratchpad that stays close.</h2>
+        </div>
+        <div>
+          <p class="section-copy">OverPad is a native macOS app for quickly capturing and organizing temporary text. It launches as a draggable 48×48 pt floating orb instead of a traditional main window. Click the orb to open the Markdown editor; close the editor to return to the unobtrusive orb without quitting the app.</p>
+          <p class="section-copy">It is designed for developers, writers, researchers, and anyone who needs a place for code snippets, prompts, error logs, links, checklists, meeting notes, or draft text while another app remains visible.</p>
+          <p class="section-copy" lang="zh-Hans"><strong>中文简介：</strong>OverPad 是一款 macOS 原生悬浮 Markdown 草稿本。点击常驻悬浮球即可记录和整理文字，支持多笔记、代码高亮、19 套配色、8 种界面语言与本地自动保存，适合编程、浏览、写作和整理 AI 上下文。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section compact" id="features">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">Core features</p>
+          <h2>Fast enough for fragments. Capable enough for real work.</h2>
+        </div>
+        <div class="feature-grid">
+          <article class="card">
+            <h3>One-click access</h3>
+            <p>Drag the floating orb anywhere on screen, then click it to open the editor beside your current work.</p>
+          </article>
+          <article class="card">
+            <h3>Cross-Space workflow</h3>
+            <p>The floating panels can join every desktop Space and are designed to assist native macOS full-screen workflows.</p>
+          </article>
+          <article class="card">
+            <h3>Multiple notes</h3>
+            <p>Create, switch, and delete multiple notes. Titles come from the first line and notes are ordered by recent use.</p>
+          </article>
+          <article class="card">
+            <h3>Markdown and code</h3>
+            <p>Edit portable Markdown source with live styling, GFM features, fenced code blocks, and syntax highlighting.</p>
+          </article>
+          <article class="card">
+            <h3>Readable your way</h3>
+            <p>Choose a custom font, adjust the base size, and zoom from 60% to 240% using familiar Command shortcuts.</p>
+          </article>
+          <article class="card">
+            <h3>19 color themes</h3>
+            <p>Switch between three light and sixteen dark palettes; the orb, editor, Markdown, and code colors update together.</p>
+          </article>
+          <article class="card">
+            <h3>Eight UI languages</h3>
+            <p>Use English, Simplified Chinese, Traditional Chinese, Japanese, Korean, Spanish, French, or German.</p>
+          </article>
+          <article class="card">
+            <h3>Automatic local saving</h3>
+            <p>Notes and key preferences are saved on your Mac and restored on relaunch. There is no manual Save button.</p>
+          </article>
+          <article class="card">
+            <h3>Low-distraction presence</h3>
+            <p>OverPad runs without a traditional Dock window and can temporarily collapse into the macOS menu bar.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="screenshots">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">Screenshots</p>
+          <h2>Built to live alongside your work.</h2>
+        </div>
+        <div class="gallery">
+          <figure>
+            <img src="./assets/overpad-one-click-notes.png" width="1586" height="992" loading="lazy" alt="A click on the OverPad floating orb opening a Markdown note editor">
+            <figcaption>Click the floating orb to open your notes whenever you need them.</figcaption>
+          </figure>
+          <figure>
+            <img src="./assets/overpad-zoom-controls.png" width="1586" height="992" loading="lazy" alt="OverPad editor shown at 100, 140, and 170 percent zoom">
+            <figcaption>Zoom note content instantly with Command-plus and Command-minus.</figcaption>
+          </figure>
+          <figure>
+            <img src="./assets/overpad-themes.png" width="1586" height="992" loading="lazy" alt="Four OverPad windows displaying light, purple, blue, and graphite themes">
+            <figcaption>Choose from 19 coordinated light and dark color themes.</figcaption>
+          </figure>
+          <figure>
+            <img src="./assets/overpad-always-within-reach.png" width="1586" height="992" loading="lazy" alt="OverPad floating above coding and browsing windows on a Mac">
+            <figcaption>Keep notes visible above your development, research, and writing tools.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section compact">
+      <div class="container two-column">
+        <div>
+          <p class="eyebrow">Good to know</p>
+          <h2>Clear scope. No mystery features.</h2>
+        </div>
+        <ul class="check-list">
+          <li>Notes remain editable as plain, portable Markdown source.</li>
+          <li>OverPad has no built-in AI generation, chat, summarization, or translation.</li>
+          <li>There is currently no iCloud sync, account system, collaboration, or web version.</li>
+          <li>OverPad is not a clipboard-history manager or a full knowledge-base app.</li>
+          <li>The app currently supports macOS only.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section compact">
+      <div class="container">
+        <article class="card privacy-callout">
+          <span class="pill">Privacy by design</span>
+          <h2>Your scratchpad stays on your Mac.</h2>
+          <p class="section-copy">OverPad does not require an account and does not include advertising, analytics, tracking, or cloud sync. Notes and preferences are stored locally by the app.</p>
+          <div class="actions">
+            <a class="button" href="./privacy.html">Read the Privacy Policy</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="faq">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">Frequently asked questions</p>
+          <h2>OverPad, in plain terms.</h2>
+        </div>
+        <div class="faq">
+          <details>
+            <summary>What is OverPad?</summary>
+            <p>OverPad is a native floating Markdown scratchpad for macOS. It stays available as a draggable orb and opens into a lightweight editor for notes, code snippets, prompts, logs, and temporary text.</p>
+          </details>
+          <details>
+            <summary>Does OverPad send notes to the cloud?</summary>
+            <p>No. Notes and preferences are stored locally on your Mac. OverPad does not provide accounts, cloud sync, analytics, advertising, or tracking.</p>
+          </details>
+          <details>
+            <summary>Does OverPad include AI features?</summary>
+            <p>No. It does not generate, summarize, translate, or upload content with AI. OverPad is useful for manually preparing clean Markdown context that you can copy into the AI tool of your choice.</p>
+          </details>
+          <details>
+            <summary>Does OverPad support Markdown and code?</summary>
+            <p>Yes. It supports live styling for common Markdown and GFM syntax, plus fenced code blocks with syntax highlighting for commonly used languages such as Swift, C#, JSON, JavaScript, TypeScript, Python, and Bash.</p>
+          </details>
+          <details>
+            <summary>Which platforms does OverPad support?</summary>
+            <p>OverPad is currently available only for macOS through the Mac App Store. There is no iPhone, iPad, Windows, Android, or web version at this time.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section compact">
+      <div class="container cta">
+        <h2>Keep the next thought within reach.</h2>
+        <p>Open a lightweight scratchpad without leaving the app, Space, or full-screen workflow already in front of you.</p>
+        <div class="actions">
+          <a class="button primary" href="https://apps.apple.com/us/app/overpad/id6805057491" rel="noopener">Get OverPad on the Mac App Store</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <span>© 2026 Old King Lab. OverPad is available for macOS.</span>
+      <div class="footer-links">
+        <a href="./privacy.html">Privacy Policy</a>
+        <a href="https://apps.apple.com/us/app/overpad/id6805057491" rel="noopener">Mac App Store</a>
+        <a href="../">Old King Lab</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
