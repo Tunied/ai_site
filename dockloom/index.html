@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DockLoom – Customizable Mac App & File Launcher</title>
+  <meta name="description" content="DockLoom is a customizable macOS menu bar launcher and Launchpad-style Apps Launcher alternative for opening apps, files, folders, scripts, and HTML shortcuts from a resizable grid.">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="application-name" content="DockLoom">
+  <meta name="apple-itunes-app" content="app-id=6806755726">
+  <meta name="theme-color" content="#090d18">
+  <link rel="canonical" href="https://ai.oldking.wang/dockloom/">
+  <link rel="icon" type="image/png" href="./assets/dockloom-app-icon.png">
+  <link rel="stylesheet" href="./styles.css">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Old King Lab">
+  <meta property="og:title" content="DockLoom – Customizable Mac App & File Launcher">
+  <meta property="og:description" content="A resizable, drag-and-drop shortcut grid for the apps, files, folders, scripts, and HTML pages you use most on your Mac.">
+  <meta property="og:url" content="https://ai.oldking.wang/dockloom/">
+  <meta property="og:image" content="https://ai.oldking.wang/dockloom/assets/dockloom-instant-access.png">
+  <meta property="og:image:width" content="1280">
+  <meta property="og:image:height" content="800">
+  <meta property="og:image:alt" content="DockLoom shortcut grid opening below its macOS menu bar icon">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="DockLoom – Customizable Mac App & File Launcher">
+  <meta name="twitter:description" content="Build a personal Launchpad-style shortcut grid for apps and files on macOS.">
+  <meta name="twitter:image" content="https://ai.oldking.wang/dockloom/assets/dockloom-instant-access.png">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "DockLoom",
+    "alternateName": ["DockLoom App Launcher", "DockLoom Mac Launcher"],
+    "url": "https://ai.oldking.wang/dockloom/",
+    "downloadUrl": "https://apps.apple.com/us/app/dockloom/id6806755726",
+    "image": "https://ai.oldking.wang/dockloom/assets/dockloom-app-icon.png",
+    "screenshot": [
+      "https://ai.oldking.wang/dockloom/assets/dockloom-instant-access.png",
+      "https://ai.oldking.wang/dockloom/assets/dockloom-drag-and-drop.png",
+      "https://ai.oldking.wang/dockloom/assets/dockloom-resizable-grid.png",
+      "https://ai.oldking.wang/dockloom/assets/dockloom-arrange-shortcuts.png",
+      "https://ai.oldking.wang/dockloom/assets/dockloom-customize-shortcuts.png"
+    ],
+    "operatingSystem": "macOS",
+    "applicationCategory": "UtilitiesApplication",
+    "description": "DockLoom is a native macOS menu bar app and file launcher. It provides a resizable Launchpad-style shortcut grid where users can drag in local apps, files, folders, command scripts, and HTML files; arrange shortcuts freely; and customize labels, icons, colors, themes, and slot sizes.",
+    "featureList": [
+      "One-click access from the macOS menu bar",
+      "Resizable shortcut window and grid",
+      "Drag-and-drop local apps, files, folders, command scripts, and HTML files",
+      "Free drag-and-drop shortcut ordering",
+      "Custom shortcut aliases",
+      "Custom shortcut icons, icon colors, and backgrounds",
+      "Adjustable label and slot sizes",
+      "Seven built-in themes",
+      "Eleven language options including Follow System",
+      "Local storage with no account required"
+    ],
+    "inLanguage": ["en", "zh-Hans", "zh-Hant", "ja", "ko", "es", "fr", "de", "pt", "ru"],
+    "author": {
+      "@type": "Organization",
+      "name": "Old King Lab",
+      "url": "https://ai.oldking.wang/"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is DockLoom?",
+        "acceptedAnswer": {"@type": "Answer", "text": "DockLoom is a native macOS menu bar launcher for apps, files, folders, command scripts, and HTML files. It presents shortcuts in a customizable, resizable grid."}
+      },
+      {
+        "@type": "Question",
+        "name": "Is DockLoom an alternative to the Mac Apps Launcher or Launchpad?",
+        "acceptedAnswer": {"@type": "Answer", "text": "Yes. DockLoom can be used as a customizable Launchpad-style Mac Apps Launcher alternative. Unlike an app-only launcher, it can also hold shortcuts to files, folders, command scripts, and local HTML files."}
+      },
+      {
+        "@type": "Question",
+        "name": "Can I resize and rearrange DockLoom?",
+        "acceptedAnswer": {"@type": "Answer", "text": "Yes. The DockLoom window can be resized, shortcut slots can be resized, and shortcuts can be dragged to empty positions or swapped with occupied positions."}
+      },
+      {
+        "@type": "Question",
+        "name": "Does DockLoom upload my shortcuts or files?",
+        "acceptedAnswer": {"@type": "Answer", "text": "No. DockLoom stores shortcut references and preferences locally on the Mac. It does not provide accounts, cloud sync, advertising, analytics, or tracking, and it does not upload the contents of shortcut targets."}
+      },
+      {
+        "@type": "Question",
+        "name": "Where is DockLoom available?",
+        "acceptedAnswer": {"@type": "Answer", "text": "DockLoom is available for macOS exclusively through the Mac App Store."}
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Primary navigation">
+      <a class="brand" href="./" aria-label="DockLoom home">
+        <img src="./assets/dockloom-app-icon.png" alt="" width="38" height="38">
+        <span>DockLoom</span>
+      </a>
+      <div class="nav-links">
+        <a href="#features">Features</a>
+        <a href="#screenshots">Screenshots</a>
+        <a href="#faq">FAQ</a>
+        <a class="privacy-link" href="./privacy.html">Privacy</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-copy">
+        <p class="eyebrow">A personal launcher for macOS</p>
+        <h1>Your Mac shortcuts.<br><span class="gradient-text">Woven your way.</span></h1>
+        <p class="lead">DockLoom turns the apps, files, folders, scripts, and local pages you use most into a flexible shortcut grid—ready from the menu bar in one click.</p>
+        <div class="actions">
+          <a class="button primary" href="https://apps.apple.com/us/app/dockloom/id6806755726" rel="noopener">Download on the Mac App Store</a>
+          <a class="button" href="#why-dockloom">See what makes it different</a>
+        </div>
+        <p class="availability">Available exclusively for Mac on the App Store</p>
+      </div>
+      <div class="container hero-visual">
+        <img src="./assets/dockloom-instant-access.png" width="1280" height="800" alt="DockLoom opening a shortcut grid below the macOS menu bar" fetchpriority="high">
+      </div>
+    </section>
+
+    <section class="container" aria-label="Product facts">
+      <div class="facts">
+        <div class="fact"><strong>Menu bar</strong><span>One-click access</span></div>
+        <div class="fact"><strong>Drag &amp; drop</strong><span>Apps, files, and folders</span></div>
+        <div class="fact"><strong>Resizable</strong><span>Window, slots, and labels</span></div>
+        <div class="fact"><strong>Local</strong><span>No account required</span></div>
+      </div>
+    </section>
+
+    <section class="section" id="why-dockloom">
+      <div class="container two-column">
+        <div>
+          <p class="eyebrow">What DockLoom is</p>
+          <h2>A Mac Apps Launcher that goes beyond apps.</h2>
+        </div>
+        <div>
+          <p class="section-copy">DockLoom is a native macOS menu bar launcher built for people who want a personal shortcut surface instead of a fixed app catalog. Use it as a customizable alternative to a traditional Mac Apps Launcher or Launchpad-style workflow, then add the documents and folders that belong beside those apps.</p>
+          <p class="section-copy">Open DockLoom from the menu bar, launch a shortcut, and get back to what you were doing. The borderless grid can grow with your collection, shrink to stay out of the way, and keep every shortcut exactly where you placed it.</p>
+          <p class="section-copy" lang="zh-Hans"><strong>中文简介：</strong>DockLoom 是一款 macOS 原生菜单栏快捷启动器，可作为 Mac Apps Launcher 或 Launchpad 风格启动方式的个性化替代方案。除了 App，还能拖入文件、文件夹、命令脚本和本地 HTML 文件，并自由调整窗口、格子、名称、图标和排序。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section compact" id="features">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">Designed around your workflow</p>
+          <h2>Fast to fill. Easy to shape.</h2>
+        </div>
+        <div class="feature-grid">
+          <article class="card">
+            <span class="card-number">01</span>
+            <h3>Drop in what you use</h3>
+            <p>Drag local apps, files, folders, <code>.command</code> scripts, and <code>.html</code> files from Finder into an empty slot.</p>
+          </article>
+          <article class="card">
+            <span class="card-number">02</span>
+            <h3>Resize the whole launcher</h3>
+            <p>Drag the window edges or corners to create the shortcut grid that fits your collection and your screen.</p>
+          </article>
+          <article class="card">
+            <span class="card-number">03</span>
+            <h3>Arrange shortcuts freely</h3>
+            <p>Drag shortcuts into open slots or swap two occupied positions. DockLoom preserves the layout you choose.</p>
+          </article>
+          <article class="card">
+            <span class="card-number">04</span>
+            <h3>Give every shortcut a name</h3>
+            <p>Replace long or unclear file names with aliases that make sense in your personal launcher.</p>
+          </article>
+          <article class="card">
+            <span class="card-number">05</span>
+            <h3>Choose its look</h3>
+            <p>Use built-in custom icons, change icon and background colors, or return to the original target icon at any time.</p>
+          </article>
+          <article class="card">
+            <span class="card-number">06</span>
+            <h3>Tune the grid</h3>
+            <p>Adjust slot size, label visibility, label size, and theme so the launcher feels compact or spacious.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="screenshots">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">See DockLoom in action</p>
+          <h2>One grid, built around you.</h2>
+        </div>
+        <div class="gallery">
+          <figure class="gallery-wide">
+            <img src="./assets/dockloom-drag-and-drop.png" width="1280" height="800" loading="lazy" alt="A JavaScript file being dragged into an empty DockLoom shortcut slot">
+            <figcaption>Add the things you use directly from Finder.</figcaption>
+          </figure>
+          <figure>
+            <img src="./assets/dockloom-resizable-grid.png" width="1280" height="800" loading="lazy" alt="DockLoom shortcut grids displayed at three different window sizes">
+            <figcaption>Resize the launcher whenever you need more—or less—room.</figcaption>
+          </figure>
+          <figure>
+            <img src="./assets/dockloom-arrange-shortcuts.png" width="1280" height="800" loading="lazy" alt="A DockLoom shortcut being moved while grid size and label controls are visible">
+            <figcaption>Reorder shortcuts and fine-tune slot and label sizing.</figcaption>
+          </figure>
+          <figure class="gallery-wide">
+            <img src="./assets/dockloom-customize-shortcuts.png" width="1280" height="800" loading="lazy" alt="DockLoom shortcut settings for aliases, custom icons, icon colors, and backgrounds">
+            <figcaption>Rename shortcuts and give each one a recognizable look.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section compact">
+      <div class="container two-column">
+        <div>
+          <p class="eyebrow">A focused alternative</p>
+          <h2>For the shortcuts you actually reach for.</h2>
+        </div>
+        <ul class="check-list">
+          <li>Works as a customizable Launchpad-style app launcher for Mac.</li>
+          <li>Mixes apps with files, folders, command scripts, and local HTML pages.</li>
+          <li>Keeps explicit shortcut positions instead of automatically compacting the grid.</li>
+          <li>Offers seven themes and a localized interface for common languages.</li>
+          <li>Runs from the menu bar without a traditional main window in the Dock.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section compact">
+      <div class="container">
+        <article class="card privacy-callout">
+          <span class="pill">Privacy by design</span>
+          <h2>Your shortcut layout stays on your Mac.</h2>
+          <p class="section-copy">DockLoom does not require an account and does not include advertising, analytics, tracking, or cloud sync. Shortcut references, aliases, visual settings, and preferences are stored locally.</p>
+          <div class="actions">
+            <a class="button" href="./privacy.html">Read the Privacy Policy</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="faq">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">Frequently asked questions</p>
+          <h2>DockLoom, in plain terms.</h2>
+        </div>
+        <div class="faq">
+          <details>
+            <summary>What is DockLoom?</summary>
+            <p>DockLoom is a native macOS menu bar launcher for apps, files, folders, command scripts, and local HTML files. It presents your shortcuts in a customizable, resizable grid.</p>
+          </details>
+          <details>
+            <summary>Can DockLoom replace a Mac Apps Launcher or Launchpad-style workflow?</summary>
+            <p>Yes. DockLoom is designed to serve as a customizable Mac Apps Launcher alternative. It gives you direct control over grid size, shortcut position, labels, icons, and colors—and it can launch more than apps.</p>
+          </details>
+          <details>
+            <summary>What can I add to DockLoom?</summary>
+            <p>You can add existing local Mac apps, regular files, folders, <code>.command</code> scripts, and <code>.html</code> files by dragging them from Finder into an empty slot.</p>
+          </details>
+          <details>
+            <summary>Does customizing a shortcut rename or modify the original file?</summary>
+            <p>No. Aliases, icons, colors, positions, and other shortcut settings belong only to DockLoom. The app does not rename, move, rewrite, or delete the original target.</p>
+          </details>
+          <details>
+            <summary>Does DockLoom upload my files or shortcut list?</summary>
+            <p>No. DockLoom stores its shortcut references and preferences locally on your Mac. It has no account system, cloud sync, advertising, analytics, or tracking, and it does not upload the contents of your shortcut targets.</p>
+          </details>
+          <details>
+            <summary>Where can I get DockLoom?</summary>
+            <p>DockLoom is available for macOS exclusively through the Mac App Store.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section compact">
+      <div class="container cta">
+        <img src="./assets/dockloom-app-icon.png" width="92" height="92" alt="DockLoom app icon">
+        <h2>Build the launcher your Mac is missing.</h2>
+        <p>Keep the apps and files that matter in one flexible grid, one click from the menu bar.</p>
+        <div class="actions">
+          <a class="button primary" href="https://apps.apple.com/us/app/dockloom/id6806755726" rel="noopener">Get DockLoom on the Mac App Store</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <span>© 2026 Old King Lab. DockLoom is available for macOS.</span>
+      <div class="footer-links">
+        <a href="./privacy.html">Privacy Policy</a>
+        <a href="https://apps.apple.com/us/app/dockloom/id6806755726" rel="noopener">Mac App Store</a>
+        <a href="../">Old King Lab</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

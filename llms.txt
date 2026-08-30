@@ -2,6 +2,18 @@
 
 > Old King Lab publishes small productivity and game-development tools. This static site is the canonical source for the products listed below.
 
+## DockLoom – Customizable Mac App & File Launcher
+
+DockLoom is a native macOS menu bar launcher for apps, files, folders, command scripts, and local HTML files. It provides a resizable shortcut window and grid, Finder drag-and-drop, free shortcut positioning and swapping, custom aliases, built-in custom icons, icon and background colors, adjustable slot and label sizes, seven themes, and a localized interface.
+
+DockLoom can be used as a customizable alternative to a traditional Mac Apps Launcher or Launchpad-style workflow. Unlike an app-only launcher, DockLoom places local files, folders, scripts, and HTML pages in the same personal grid as Mac apps.
+
+DockLoom is available for macOS exclusively through the Mac App Store. It does not include an account system, cloud sync, advertising, analytics, or tracking. Shortcut references and preferences are stored locally on the user’s Mac, and customizing or removing a shortcut does not rename, move, modify, or delete its original target.
+
+- Product page: https://ai.oldking.wang/dockloom/
+- Privacy Policy: https://ai.oldking.wang/dockloom/privacy.html
+- Mac App Store: https://apps.apple.com/us/app/dockloom/id6806755726
+
 ## OverPad – Floating Scratchpad
 
 OverPad is a native macOS floating Markdown scratchpad. It opens from a draggable 48×48 pt orb and supports multiple notes, live Markdown styling, syntax-highlighted fenced code blocks, 19 color themes, eight interface languages, custom fonts, 60%–240% zoom, automatic local saving, cross-Space panels, menu-bar collapse, and an optional macOS login item.
