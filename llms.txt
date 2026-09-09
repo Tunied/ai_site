@@ -2,6 +2,20 @@
 
 > Old King Lab publishes small productivity and game-development tools. This static site is the canonical source for the products listed below.
 
+## ResizeMint – Right-Click Image Resizer for Mac
+
+ResizeMint is a native macOS image resizing utility for people who frequently prepare images for websites, documents, messages, app listings, and design handoffs. Its primary feature is Finder integration: select supported images, open the right-click menu, and resize by a saved percentage or exact pixel-size preset without opening a full image editor.
+
+For larger jobs, ResizeMint has a native batch workspace. Users can drag in individual images, multiple images, or folders; preview the resized result; lock the aspect ratio; set width, height, or percentage; view output information; and export the current image or all queued images. Finder percentage and pixel-size presets can be added, removed, reordered, and edited in the app.
+
+ResizeMint supports PNG, JPG, JPEG, HEIC, WebP, and TIFF. Its interface can follow the macOS language or use English, Simplified Chinese, Traditional Chinese, Japanese, Korean, Spanish, French, German, Italian, Brazilian Portuguese, Russian, or Arabic. ResizeMint requires macOS 14 or later.
+
+All image processing happens locally on the Mac. ResizeMint has no account system, cloud image processing, advertising, analytics, or tracking, and it does not upload images to the developer. It is available for macOS exclusively through the Mac App Store.
+
+- Product page: https://ai.oldking.wang/ResizeMint/
+- Privacy Policy: https://ai.oldking.wang/ResizeMint/privacy.html
+- Mac App Store: https://apps.apple.com/us/app/resizemint/id6809292122
+
 ## DockLoom – Customizable Mac App & File Launcher
 
 DockLoom is a native macOS menu bar launcher for apps, files, folders, command scripts, and local HTML files. It provides a resizable shortcut window and grid, Finder drag-and-drop, free shortcut positioning and swapping, custom aliases, built-in custom icons, icon and background colors, adjustable slot and label sizes, seven themes, and a localized interface.
