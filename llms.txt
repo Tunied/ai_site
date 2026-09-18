@@ -13,6 +13,7 @@ ResizeMint supports PNG, JPG, JPEG, HEIC, WebP, and TIFF. Its interface can foll
 All image processing happens locally on the Mac. ResizeMint has no account system, cloud image processing, advertising, analytics, or tracking, and it does not upload images to the developer. It is available for macOS exclusively through the Mac App Store.
 
 - Product page: https://ai.oldking.wang/ResizeMint/
+- Support & Feedback: https://ai.oldking.wang/ResizeMint/#support (questions, bug reports, and feature suggestions via the embedded Tally form)
 - Privacy Policy: https://ai.oldking.wang/ResizeMint/privacy.html
 - Mac App Store: https://apps.apple.com/us/app/resizemint/id6809292122
 
